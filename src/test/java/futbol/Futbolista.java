@@ -23,14 +23,14 @@ public abstract class Futbolista implements  Comparable <Object> {
 	
 	
 	public String toString() {
-		return "El futbolista " + this.nombre + "tiene " + this.edad +", y juega de "+ this.posicion;
+		return "El futbolista " + this.getNombre() + "tiene " + this.getEdad() +", y juega de "+ this.getPosicion();
 	}
 	
 	
 	
 	
 	public boolean equals(Futbolista f) {
-		if (this.nombre == f.getNombre() && this.edad == f.getEdad() && this.posicion == f.getPosicion() ) {
+		if (this.getNombre() == f.getNombre() && this.getEdad() == f.getEdad() && this.getPosicion() == f.getPosicion() ) {
 			return true;
 		}
 		else {
