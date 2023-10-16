@@ -29,8 +29,8 @@ public abstract class Futbolista implements  Comparable <Object> {
 	
 	
 	
-	public boolean equals(Futbolista f) {
-		if (this.getNombre() == f.getNombre() && this.getEdad() == f.getEdad() && this.getPosicion() == f.getPosicion() ) {
+	public boolean equals(Object f) {
+		if (this.getNombre() == ((Portero)f).getNombre() && this.getEdad() == ((Portero)f).getEdad() && this.getPosicion() == ((Portero)f).getPosicion() ) {
 			return true;
 		}
 		else {
